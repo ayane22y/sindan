@@ -71,158 +71,158 @@ const results ={
     },
 
     AAB: {
-        icon:"", //バレエシューズ挿入
+        icon:"fa-solid fa-shoe-prints", //バレエシューズ挿入
         name:"バレエコア",
         description:"リボンや淡いカラーなどのバレリーナのような雰囲気" //ハート挿入
     },
 
     AAC: {
-        icon:"", //王冠マーク
+        icon:"fa-solid fa-crown", //王冠マーク
         name:"アイドル衣装",
         description:"華やかでキラキラしたステージ映えするスタイル"
     },
 
     ABA: {
-        icon:"", //リボン挿入
+        icon:"fa-solid fa-heart", //リボン挿入
         name:"量産",
         description:"可愛くて甘い王道の女の子らしいファッション" //ハート
     },
 
     ABB: {
-        icon:"", //お花マーク
+        icon:"fa-solid fa-spa", //お花マーク
         name:"フェミニン",
         description:"上品で女性らしい、大人可愛いスタイル"
     },
 
     ABC: {
-        icon:"", //黒のハート
+        icon:"fa-solid fa-heart-crack", //黒のハート
         name:"地雷",
         description:"可愛さとダークさを組み合わせた個性的なスタイルが好き！"
     },
 
     ACA: {
-        icon:"", //リボンマーク
+        icon:"fa-solid fa-wand-magic-sparkles", //リボンマーク
         name:"ロリータ",
         description:"レースやリボンなど世界観のあるかわいい服が好き" //ハート
     },
 
     ACB: {
-        icon:"", //ダイヤのマーク
+        icon:"fa-solid fa-gem", //ダイヤのマーク
         name:"ワンホン",
         description:"華やかで洗練された大人っぽいスタイル" //ハート
     },
 
     ACC: {
-        icon:"", //黒のハート
+        icon:"fa-solid fa-champagne-glasses", //黒のハート
         name:"ドレス",
         description:"特別感のある華やかなファッション！"
     },
 
     BAA: {
-        icon:"", //黒のハート
+        icon:"fa-solid fa-skull", //黒のハート
         name:"ゴスロリ",
         description:"黒を基調とした幻想的で個性的な世界観"
     },
 
     BAB: {
-        icon:"", //時計のマーク
+        icon:"fa-solid fa-clock", //時計のマーク
         name:"レトロ",
         description:"昔っぽさを感じるクラシカルなファッション"
 
     },
 
     BAC: {
-        icon:"", //洋服のマーク
+        icon:"fa-solid fa-shirt", //洋服のマーク
         name:"古着",
         description:"人と違う一点物や味のある服"
     },
 
     BBA: {
-        icon:"", //本のマーク
+        icon:"fa-solid fa-book", //本のマーク
         name:"トラッド",
         description:"チェックやシャツなどきちんとした服装"
     },
 
     BBB: {
-        icon:"", //白いハート
+        icon:"fa-solid fa-circle", //白いハート
         name:"シンプル",
         description:"シンプルだけど洗練されたファッション"
     },
 
     BBC: {
-        icon:"", //茶色のコート
+        icon:"fa-solid fa-user-tie", //茶色のコート
         name:"メンズライク",
         description:"パンツやジャケットなどかっこいい服"
     },
 
     BCA: {
-        icon:"" ,//黒のハート
+        icon:"fa-solid fa-cube" ,//黒のハート
         name:"モード",
         description:"スタイリッシュで個性的なファッション"
     },
 
     BCB: {
-        icon:"", //バッグ
+        icon:"fa-solid fa-briefcase", //バッグ
         name:"オフィスカジュアル",
         description:"きれいめで大人っぽい服装"
     },
 
     BCC: {
-        icon:"", //雷
+        icon:"fa-solid fa-bolt", //雷
         name:"エレクトリック",
         description:"近未来的で目を引くファッション！"
     },
 
     CAA: {
-        icon:"", //葉っぱ
+        icon:"fa-solid fa-leaf", //葉っぱ
         name:"ナチュラル",
         description:"自然体でリラックスしたファッション"
     },
 
     CAB: {
-        icon:"", //ダンスマーク
+        icon:"fa-solid fa-music", //ダンスマーク
         name:"ダンス",
         description:"動きやすくて可愛いダンス系ファッション"
     },
 
     CAC: {
-        icon:"" ,//ミラーボール
+        icon:"fa-solid fa-compact-disc" ,//ミラーボール
         name:"Y2K",
         description:"2000年代っぽいポップで個性的なスタイル"
     },
 
     CBA: {
-        icon:"", //キャンプ
+        icon:"fa-solid fa-campground", //キャンプ
         name:"アウトドア",
         description:"機能的で動きやすいアウトドアファッション"
     },
 
     CBB: {
-        icon:"", //スニーカー
+        icon:"fa-solid fa-shoe-prints", //スニーカー
         name:"カジュアル",
         description:"気軽に着られて毎日楽しめる服装"
     },
 
     CBC: {
-        icon:"", //スポーツ
+        icon:"fa-solid fa-basketball", //スポーツ
         name:"スポーティー",
         description:"スニーカーやスポーツウェアなどアクティブな服"
     },
 
     CCA: {
-        icon:"", //秋
+        icon:"fa-solid fa-leaf", //秋
         name:"オータム",
         description:"ニットやジャケットなど秋らしい服"
     },
 
     CCB: {
-        icon:"", //韓国
+        icon:"fa-solid fa-star", //韓国
         name:"韓国系",
         description:"韓国っぽいトレンド感のあるスタイル"
     },
 
     CCC: {
-        icon:"", //スケボー
+        icon:"fa-solid fa-person-snowboarding", //スケボー
         name:"ストリート",
         description:"オーバーサイズなど自由でかっこいい服装"
     }
