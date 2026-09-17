@@ -331,7 +331,7 @@ function showQuestion() {
 
 
         //パジャマ画像に戻す
-        document.getElementById().src =
+        document.getElementById("girl-image").src =
             "images/oyouhuku.png";
 
         //Q1表示
