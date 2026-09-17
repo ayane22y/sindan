@@ -6,40 +6,63 @@
     <meta name="robots" content="noindex, nofollow">
     <meta name="description" content="これはJavaScriptの課題作品です。">
 
-    <title>今日のお洋服</title>
+    <title>Fashion Style 診断</title>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
     
-<header>
+<div class="container">
 
-    <h1> 今日のお洋服 </h1>
-    <p>今日はどんな服でお出かけしようかな！</p>
+    <h1> Fashion Style 診断 </h1>
+    <p class="sub-title">
+        今日のお洋服を選んでね！
+    </p>
 
-</header>
 
-<!--メイン画像 -->
-<main>
 
-    <section class ="main-visual">
-        <img src ="images/　　　.jpg" alt ="キャミソールとグレーのスウェットの女の子の絵">
+<!--診断画面 -->
+<div id="quiz" class="question">
 
-    </section>
+    <div id="progress" class="progress">
+     Q1 / 3
+     </div>
 
-    <!--診断開始-->
+     <h2 id="question-text">
+        まず、今日の気分は？
+     </h2>
 
-    <section class="start">
+     <div id="answers"></div>
 
-        <h2>これを見てくれている君へ</h2>
-        <p>３つの質問に答えて私の今日のお洋服を考えてほしいな！</p>
+     </div>
 
-        <a href="q1.html" class="start-button">
-            診断スタート
-        </a>
-    </section>
+<!--結果画面-->
+<div id="result" class="result hidden">
 
-    </main>
+<div id="result-icon" class="result-icon">
+    <!---リボンのアイコン挿入-->>
+</div>
+
+<p>あなたの結果は……</p>
+
+<div id="result-name" class="result-name">
+    ガーリー
+</div>
+
+<p id="result-description">
+    甘くて可愛い雰囲気が似合うタイプ  <!--文字横にハートのアイコン挿入-->>
+</p>
+
+<button class="restart-button" onclick="restartQuiz()">
+    もう一度診断する
+</button>
+
+</div>
+
+</div>
+
+
+
 
     <footer>
         <p>&copy; 今日のお洋服</p>
@@ -47,6 +70,7 @@
 
     
     <script src="js/script -01.js"></script>
+    <script src="js/script -02.js"></script>
 
 
 </body>
