@@ -249,6 +249,14 @@ function showQuestion() {
 
     document.getElementById("question-text").textContent =question.text;
 
+    //const quiz =document.getElementById(quiz);
+
+    //quiz.classList.remove("slid-in");
+    //void quiz.offsetWidth;
+    //quiz.classList.add("slide-in");
+
+
+
     const answerArea = document.getElementById("answers");
 
     answerArea.innerHTML = "";

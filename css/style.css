@@ -50,7 +50,9 @@ body {
 .content-area {
     width: 55%;
     max-width: 550px;
+
 }
+
 
 
 /*タイトル*/
@@ -245,5 +247,23 @@ footer {
     .content-area {
         width: 100%;
         order: 2;
+    }
+}
+
+
+/*診断のスライドアニメーション*/
+/* .question { 
+    animation: slidIn 0.6s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(200px);
+        opasity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
