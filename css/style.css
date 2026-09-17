@@ -11,94 +11,238 @@ body {
     color: #555;
 }
 
+
+/*メイン*/
+
+
 .container {
-    max-width: 600px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 30px 20px;
+    padding: 40px 20px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/*女の子を左に配置*/
+
+
+.girl-area {
+    width: 45%;
     text-align: center;
 }
 
-h1 {
-    color: #e88dd5;
-    margin-bottom: 10px;
+/* 女の子の画像 */
+
+.girl-area img {
+    width: 100%;
+    max-width: 450px;
+    max-height: 650px;
+    object-fit: contain;
 }
 
-.sub-title {
-    color: #999;
-    margin-bottom: 30px;
+
+/*右側：診断*/
+
+
+.content-area {
+    width: 55%;
+    max-width: 550px;
 }
+
+
+/*タイトル*/
+
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: #e58bb4;
+    font-size: 32px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.header p {
+    color: #999;
+}
+
+/*診断画面*/
+
+
+.quiz {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 25px;
+
+    /* ふんわりした影 */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+/* 質問 */
 
 .question {
-    background: white;
-    border-radius: 20px;
-    padding: 30px 20px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    width: 100%;
 }
 
-.question-number {
+.progress {
     color: #e88bb5;
+    font-size: 14px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 h2 {
+    color: #555;
     font-size: 22px;
     margin-bottom: 25px;
 }
 
+
+/*選択肢*/
+
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .answer-button {
-    display: block;
     width: 100%;
-    padding: 16px;
-    margin: 12px 0;
-    border: 2px solid #f3b6d2;
-    border-radius: 15px;
+    padding: 18px;
+
+    border-radius: 18px;
+    border: 2px solid #f3b4d0;
+
     background: #fff;
+
     color: #555;
     font-size: 16px;
+    font-weight: 500;
+
     cursor: pointer;
+
     transition: 0.2s;
 }
 
+/* マウスを乗せたとき */
+
 .answer-button:hover {
     background: #fff0f7;
+    border-color: #e88bb5;
     transform: translateY(-2px);
 }
 
+
+/*結果画面*/
+
+
 .result {
     background: white;
-    border-radius: 20px;
-    padding: 35px 20px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    padding: 40px 25px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
+
+/* 結果のアイコン */
 
 .result-icon {
-    font-size: 50px;
+    font-size: 55px;
+    margin-bottom: 10px;
 }
 
+/* 結果の名前 */
+
 .result-name {
-    font-size: 30px;
-    color: #e88dd5;
+    color: #e58bb4;
+    font-size: 32px;
+    font-weight: bold;
+
     margin: 15px 0;
 }
 
-.restart-button {
-    border: none;
-    background: #e88bb5;
-    color:white;
-    padding: 15px 30px;
-    border-radius: 30px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
+/* 結果の説明 */
+
+#result-description {
+    color: #777;
+    line-height: 1.8;
 }
+
+/*もう一度診断するボタン*/
+
+.restart-button {
+    margin-top: 20px;
+
+    padding: 15px 30px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #e88bb5;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.restart-button:hover {
+    background: #df78a6;
+    transform: translateY(-2px);
+}
+
+/*非表示*/
+
 
 .hidden {
     display: none;
 }
 
-.progress {
-    color: #aaa;
-    font-size: 14px;
-    margin-bottom: 15px;
+/*フッター*/
+
+footer {
+    text-align: center;
+    color: #999;
+    padding: 20px;
+}
+
+
+/*スマホ対応*/
+
+@media (max-width: 700px) {
+
+    .container {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .girl-area {
+        width: 100%;
+        order: 1;
+    }
+
+    .girl-area img {
+        max-height: 350px;
+    }
+
+    .content-area {
+        width: 100%;
+        order: 2;
+    }
 }

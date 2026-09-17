@@ -6,61 +6,81 @@
     <meta name="robots" content="noindex, nofollow">
     <meta name="description" content="これはJavaScriptの課題作品です。">
 
-    <title>Fashion Style 診断</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>Fashion Style 診断</title>
 
 </head>
 <body>
-    
-<div class="container">
 
+<main class="container">
+<!--左側女の子-->
+<div class="girl-area">
+
+<img id="girl-image" src="images/oyouhuku.png" alt="パジャマ姿">
+
+</div>
+
+<!--右側に診断-->
+<div class="content-area">
+    <header class="header">
     <h1> Fashion Style 診断 </h1>
     <p class="sub-title">
         今日のお洋服を選んでね！
     </p>
-
+    </header>
 
 
 <!--診断画面 -->
-<div id="quiz" class="question">
+<section id="quiz" class="quiz">
 
-    <div id="progress" class="progress">
+<div class="question">
+
+    <p id="progress" class="progress">
      Q1 / 3
-     </div>
+    </p>
 
      <h2 id="question-text">
         まず、今日の気分は？
      </h2>
 
-     <div id="answers"></div>
+     <div id="answers" class="answers"></div><!--class +-->
 
      </div>
 
-<!--結果画面-->
-<div id="result" class="result hidden">
+     </section>
 
-<div id="result-icon" class="result-icon">
-    <!---リボンのアイコン挿入-->>
-</div>
+<!--結果画面-->
+<section id="result" class="result hidden"><!--section-->
+
 
 <p>あなたの結果は……</p>
+
+<div id="result-icon" class="result-icon"><!---->
+    <!---リボンのアイコン挿入-->
+</div>
+
 
 <div id="result-name" class="result-name">
     ガーリー
 </div>
 
 <p id="result-description">
-    甘くて可愛い雰囲気が似合うタイプ  <!--文字横にハートのアイコン挿入-->>
+    甘くて可愛い雰囲気が似合うタイプ  <!--文字横にハートのアイコン挿入-->
 </p>
+
 
 <button class="restart-button" onclick="restartQuiz()">
     もう一度診断する
 </button>
 
-</div>
+</section>
 
 </div>
 
+
+</main>
 
 
 
@@ -68,10 +88,11 @@
         <p>&copy; 今日のお洋服</p>
     </footer>
 
-    
+
+
     <script src="js/script -01.js"></script>
     <script src="js/script -02.js"></script>
-
+    
 
 </body>
 

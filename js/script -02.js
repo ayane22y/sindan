@@ -17,8 +17,8 @@ const questions = [
                 value: "B"
             },
             {
-                text: "C:楽しく働きたい" //文字横音符挿入
-     value: "C"
+                text: "C:楽しく働きたい" ,//文字横音符挿入
+                value: "C"
             }
         ]
     },
@@ -65,7 +65,7 @@ const questions = [
 const results ={
 
     AAA: {
-        icon:"", //リボンのマーク挿入
+        icon:"fa-solid fa-ribbon", //リボンのマーク挿入
         name:"ガーリー",
         description:"甘くて可愛い女の子らしいスタイル" //文字横ハート
     },
@@ -121,7 +121,7 @@ const results ={
     BAA: {
         icon:"", //黒のハート
         name:"ゴスロリ",
-        desription:"黒を基調とした幻想的で個性的な世界観"
+        description:"黒を基調とした幻想的で個性的な世界観"
     },
 
     BAB: {
@@ -156,7 +156,7 @@ const results ={
     },
 
     BCA: {
-        icon:"" //黒のハート
+        icon:"" ,//黒のハート
         name:"モード",
         description:"スタイリッシュで個性的なファッション"
     },
@@ -186,7 +186,7 @@ const results ={
     },
 
     CAC: {
-        icon:"" //ミラーボール
+        icon:"" ,//ミラーボール
         name:"Y2K",
         description:"2000年代っぽいポップで個性的なスタイル"
     },
@@ -247,6 +247,102 @@ function showQuestion() {
     document.getElementById("progress").textContent =
       "Q" + (currentQuestion + 1) + " / 3";
 
-      
+    document.getElementById("question-text").textContent =question.text;
 
-}
+    const answerArea = document.getElementById("answers");
+
+    answerArea.innerHTML = "";
+
+    question.answers.forEach(function(answer){
+
+    const button = document.createElement("button");
+    
+    button.className ="answer-button";
+
+    button.textContent =answer.text; //answer
+
+    button.onclick =function() {
+
+    //答えを保存する
+    answers += answer.value;
+
+    //次の質問へ進む
+    currentQuestion++;
+
+    if  (currentQuestion < questions.length){
+
+        showQuestion();
+
+    } else {
+
+        showResult();
+    }
+
+    };
+
+    answerArea.appendChild(button);
+
+    }); 
+
+
+    }
+
+    //結果を表示する
+
+    function showResult() {
+    //診断画面を隠す
+        document.getElementById("quiz")
+        .classList.add("hidden");
+    //結果画面を表示
+        document.getElementById("result")
+        .classList.remove("hidden");
+    //答えから結果を探す
+        const result =results[answers];
+    //結果のアイコン
+    const resultIcon =document.getElementById("result-icon");
+
+    resultIcon.innerHTML = `<i class="${result.icon}"></i>`;
+    //結果の名前
+         document.getElementById("result-name")
+         .textContent = result.name;
+    //結果の説明
+         document.getElementById("result-description")
+         .textContent = result.description;
+    //女の子の画像を変更
+    const girlImage = document.getElementById("girl-image");
+
+    girlImage.src = "images/" + answers + ".png";
+
+    }
+
+    //初めの画面からやり直す
+
+    function restartQuiz() {
+    
+        currentQuestion = 0;
+
+        answers = "";
+
+        document.getElementById("result")
+        .classList.add("hidden");
+
+        document.getElementById("quiz")
+        .classList.remove("hidden");
+
+
+        //パジャマ画像に戻す
+        document.getElementById().src =
+            "images/oyouhuku.png";
+
+        //Q1表示
+        showQuestion();
+
+    }
+
+    //最初の質問を表示
+
+    showQuestion();
+
+    //画像操作
+
+
